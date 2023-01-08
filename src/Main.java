@@ -22,8 +22,8 @@ public class Main {
 
         System.out.println( checkLabels(negative, setOfTextAnalyzers));
         System.out.println( checkLabels(pozitive, setOfTextAnalyzers));
-
     }
+
    public static Label checkLabels(String text, TextAnalyzer[] setTextAnalyzers) {
        for (TextAnalyzer ta : setTextAnalyzers)
            if (ta.processText(text) != Label.OK) return ta.processText(text);

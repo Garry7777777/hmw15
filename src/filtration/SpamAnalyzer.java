@@ -1,7 +1,7 @@
 package filtration;
 public class SpamAnalyzer extends KeywordAnalyzer {
-    public SpamAnalyzer(String[] keyWords){
-        super(keyWords);
+    public SpamAnalyzer(String[] keywords){
+        super(keywords);
     }
     @Override
     protected Label getLabel() {

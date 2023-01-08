@@ -1,11 +1,9 @@
 package filtration;
 
 public abstract class KeywordAnalyzer implements TextAnalyzer{
-
-    private final String[] keyWords;
-
-    public KeywordAnalyzer(String[] keyWords){
-        this.keyWords = keyWords;
+    private final String[] keywords;
+    public KeywordAnalyzer(String[] keywords){
+        this.keywords = keywords;
     }
     public Label processText(String text) {
         for (String kw : getKeywords())
@@ -13,7 +11,7 @@ public abstract class KeywordAnalyzer implements TextAnalyzer{
         return Label.OK;
     }
     protected String[] getKeywords (){
-        return keyWords;
+        return keywords;
     }
     protected abstract Label getLabel();
 
