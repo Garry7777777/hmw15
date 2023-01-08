@@ -1,6 +1,5 @@
 package filtration;
-
-public class SpamAnalyzer extends KeywordAnalyzer implements  TextAnalyzer{
+public class SpamAnalyzer extends KeywordAnalyzer {
     public SpamAnalyzer(String[] keyWords){
         super(keyWords);
     }
