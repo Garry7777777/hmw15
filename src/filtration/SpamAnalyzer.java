@@ -7,5 +7,4 @@ public class SpamAnalyzer extends KeywordAnalyzer {
     protected Label getLabel() {
         return Label.SPAM;
     }
-
 }

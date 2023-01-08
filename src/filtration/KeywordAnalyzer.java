@@ -14,6 +14,5 @@ public abstract class KeywordAnalyzer implements TextAnalyzer{
         return keywords;
     }
     protected abstract Label getLabel();
-
 }
 

@@ -22,6 +22,7 @@ public class Main {
 
         System.out.println( checkLabels(negative, setOfTextAnalyzers));
         System.out.println( checkLabels(pozitive, setOfTextAnalyzers));
+
     }
 
    public static Label checkLabels(String text, TextAnalyzer[] setTextAnalyzers) {
